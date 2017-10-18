@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+# source 'https://rubygems.org'
+source 'https://ruby.taobao.org/'
 
 
 gem 'bootstrap-sass', '~> 3.3.7'
