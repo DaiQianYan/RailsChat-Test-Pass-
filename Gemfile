@@ -1,11 +1,11 @@
-# source 'https://rubygems.org'
-source 'https://ruby.taobao.org/'
+source 'https://rubygems.org'
+# source 'https://ruby.taobao.org/'
 
 
 gem 'bootstrap-sass', '~> 3.3.7'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.11'
-gem 'faker', '~> 1.6.3'
+
 gem 'rails_admin', '~> 0.8.1'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
@@ -23,7 +23,7 @@ gem 'responders', '~> 2.0'
 gem 'render_sync'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5.2'
+gem 'rails'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
