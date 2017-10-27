@@ -1,10 +1,12 @@
 <li class="mar-btm">
+  <!-- <div class="media-<%= current_user.id==message.user.id ? 'right' : 'left' %>"> -->
   <div class="media-<%= current_user.id==message.user.id ? 'right' : 'left' %>">
-    <%= image_tag "user-icon.png", class: "img-sm" %>
+    <!-- <%= image_tag "user-icon.png", class: "img-sm" %> -->
+    <img class="d-flex mr-3" src="https://robohash.org/4.png?set=set3" width="64" />
   </div>
   <div class="media-body pad-hor <%= "speech-right" if current_user.id==message.user.id %>">
     <div class="speech">
-      <p class="media-heading"><%= current_user.id==message.user.id ? '我' : message.user.name %>
+      <p class="media-heading"><%= current_user.id==message.user.id ? 'You said:' : message.user.name + " said"%>
         <text class="speech-time">
           <i class="fa fa-clock-o fa-fw"></i>
           <%= message.created_at.to_formatted_s(:db) %>
